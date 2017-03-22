@@ -12,7 +12,7 @@
 
 # Note, not DataShift, case sensitive, create namespace for command line : datashift
 
-require 'spree'
+require 'spree_core'
 
 require 'datashift_spree'
 

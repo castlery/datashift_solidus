@@ -20,8 +20,7 @@
 # =>          TODO - See if we can improve DB creation/migration ....
 #             N.B Some or all of Spree Tests may fail very first time run,
 #             as the database is auto generated
-# =>          
-require 'spree'
+# =>
 require 'spree_core'
     
 module DataShift
@@ -85,7 +84,6 @@ module DataShift
     end
 
     def self.load()
-      require 'spree'
       require 'spree_core'
     end   
   end

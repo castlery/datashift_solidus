@@ -33,7 +33,7 @@
 #
 require 'rbconfig'
 require 'datashift'
-require 'spree/core'
+require 'spree_core'
 
 $:.unshift '.' unless $:.include?('.')
 
