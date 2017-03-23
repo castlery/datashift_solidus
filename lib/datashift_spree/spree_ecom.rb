@@ -34,11 +34,7 @@ module DataShift
     # Helpers so we can cope with both pre 1.0 and post 1.0 versions of Spree in same datashift version
 
     def self.get_spree_class(x)
-      if(is_namespace_version())    
-        ModelMapper::class_from_string("Spree::#{x}")
-      else
-        ModelMapper::class_from_string(x.to_s)
-      end
+      ModelMapper::class_from_string("Spree::#{x}")
     end
       
     def self.get_product_class
